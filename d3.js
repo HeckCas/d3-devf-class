@@ -27,23 +27,23 @@
     // d3.select('#example3')
     //   .selectAll('p')
     //   .data(data)
-    //   // .text(d => d)
+    //   .text(d => d)
     //   .enter()
     //   .append('p')
     //   .text(d => d);
 
                             /// Ejmeplo 4 ///
-    // const data2 = ['Parrafo A', 'Párrafo C', 'Párrafo D', 'Párrafo E', 'Párrafo F'];
-    // const selection = d3.select('#example4 .panel-body')
-    //   .selectAll('p')
-    //   .data(data2);
+    const data2 = ['Parrafo A', 'Párrafo C', 'Párrafo D', 'Párrafo E', 'Párrafo F', 'Párrafo G', 'Párrafo H'];
+    const selection = d3.select('#example4')
+      .selectAll('p')
+      .data(data2);
     // console.log(selection);
 
-    // // UPDATE
+    // UPDATE
     // selection
     //   .text(d => d);
 
-    // // ENTER
+    // ENTER
     // selection
     //   .enter()
     //   .append('p')
