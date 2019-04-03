@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Aprendiending d3</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> <!--Aquí mandas a llamar el CDN  -->
+</head>
+</head>
+<body>
+  <div class="container">
+        <div class="wrapper">
+          <div class="container-mini">
+            <h3>El mundo actual está lleno de datos, datos que requieren ser mostrados de la mejor manera posible, la cual muchas veces se logra condensando la información en gráficos. Para lograr esto existen diversidad de herramientas que dependerán según el objetivo que se quiere lograr.
+              <br>
+               <h3>Todo comienza con una pregunta, las aplicaciones prácticas de la ciencia de datos se basan en las siguientes etapas.</h3>
+                <ul>
+                  <li>Tener una hipótesis u objetivo, una pregunta que se desea responder.</li>
+                  <li>Obtener los datos necesarios para responderla</li>
+                  <li>Examinar los datos</li>
+                  <li>Establecer un modelo que permita obtener respuestas</li>
+                  <li>Construir gráficos que permitan observar los resultados</li>
+                </ul>
+              </h3>
+          </div>
+          <div class="blanch">
+            <h1>🎊 🎉 ¡¡¡Gracias a Blanca!!! 🎊 🎉</h1>
+            <img class="img-blanch" src="./blanch.jpg" alt="blanca_lopez">
+            <h4>Siganla en sus redes</h4>
+                <ul class="icons-style">
+                  <li><a href="https://www.facebook.com/azulopezg"><i class="fab fa-facebook-square"></i></a></li>
+                  <li><a href="https://twitter.com/blankazucenalg"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="https://github.com/blankazucenalg"><i class="fab fa-github"></i></a></li>
+                </ul>
+          </div>
+        </div>
+          <h2>Amonos con D3!!!</h2>
+        <h3> Seleccionando un elemento del DOM y cambiando propiedades (.attr(), .style()) </h3>
+        <div id="example1" class="panel-heading">
+          #example1
+          <p>Parrafo 1</p>
+          <p>Parrafo 2</p>
+        </div>
+        <h3> Estableciendo propiedades dinámicas sobre un elemento del DOM </h3>
+        <div id="example2" class="panel-heading">
+          #example2
+          <p>Parrafo 1</p>
+          <p>Parrafo 2</p>
+        </div>
+        <h3>Ejercicio1 </h3>
+        <ul>
+            <li>Selecciona los div y cambia su color de fondo (background)</li>
+            <li>Selecciona el primer div y cambia el color de fuente (color)</li>
+            <li>Selecciona el segundo div y aplicale la clase "circle"</li>
+          </ul>
+        <div id="exercise1" class="panel-heading">
+          #exercise1
+          <br>
+          <div class="square color-text">Div1</div>
+          <div class="square color-text">Div2</div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h3>Enlazando datos con los elementos (.data())</h3>
+        <img src="./binding-data.png" alt="binding-data">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="example3" class="panel-heading">
+          #example3
+          <p>Parrafo 1</p>
+          <p>Parrafo 2</p>
+        </div>
+        <h4>Update, enter, exit</h4>
+        <a href="https://bost.ocks.org/mike/selection/#enter-update-exit">https://bost.ocks.org/mike/selection/#enter-update-exit</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <strong>Update</strong>
+        <p>Resultado de los elementos del DOM que hagan match con los datos</p>
+        <strong>Enter</strong>
+        <p>Resultado de los datos que no tienen un elemento en el DOM</p>
+        <strong>Exit</strong>
+        <p>Resultado de los elementos del DOM que no tienen un dato asignado</p>
+
+        <h3> Actualizando los datos </h3>
+        <div id="example4" class="panel-heading container">
+          #example4
+          <p>Parrafo 1</p>
+          <p>Parrafo 2</p>
+          <p>Parrafo A</p>
+          <p>Parrafo B</p>
+          <p>Parrafo C</p>
+          <p>Parrafo D</p>
+        </div>
+        <h3>Ejercicio2 </h3>
+        <ul>
+            <li>Crea un div por cada elemento del arreglo dado usando la subseleccion .enter()</li>
+            <li>Aplica a los divs la clase "square" o "circle" para que sean visibles</li>
+          </ul>          
+        <div id="exercise2" class="panel-heading">
+          #exercise2
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h2 class="datos">Graficando datos</h2>
+        <h3> Cuando los elementos y los datos toman sentido </h3>
+        <div id="example5" class="panel-heading">
+          #example5
+        </div>
+          <p>Ejercicio 3
+          Retomando el ejercicio de la sección anterior.</p>
+          <p>Ahora van a tener que recrear con los mismos datos divs, les tienen que pasar la clase circle y su ancho y alto deben ser el valor del dato</p>
+          <div id="exercise3" class="panel-heading">
+            #exercise3
+          </div>
+
+  </div>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="d3.js"></script>
+</body>
+</html>
