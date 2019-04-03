@@ -1,5 +1,5 @@
 
-                        /// Code de Ejemplo1 /// 
+                        /// Ejemplo1 /// 
     // Select y SelectAll
     // d3.select('#example1')
     // const parrafo = d3.selectAll('#example1 p');
@@ -9,7 +9,7 @@
     //  .style('font-size', (Math.random() * 440) + 'px');
     // console.log(parrafo);
 
-                        ///Code de Ejemplo 2 ///
+                        /// Ejemplo 2 ///
     // Valores dinamicos para cada uno de los elementos (callbacks)
     // // Iteracion con d3
     // d3.selectAll('#example2 p')
@@ -57,7 +57,7 @@
       // Usar la subselección .enter()
       // Agregar un nuevo div usando .append('div')
 
-                    //Ejemplo 5
+                  /// Ejemplo 5  ///
 
       // const datados = [30, 50, 80, 120, 150];
       // d3.select('#example5')
@@ -69,3 +69,59 @@
       //   .style('margin', '5px')
       //   .style('width', d => d + 'px')
       //   .style('height', '30px');
+
+              /// Ejemplo Barchart ///
+// Nuestra primera grafiquita
+// let  defunciones = 
+// [
+//   {Defunciones: 12234},
+//   {Defunciones: 9280},
+//   {Defunciones: 9461},
+//   {Defunciones: 7685},
+//   {Defunciones: 3092},
+//   {Defunciones: 2749},
+//   {Defunciones: 926},
+//   {Defunciones: 2402},
+//   {Defunciones: 1839},
+//   {Defunciones: 1714},
+//   {Defunciones: 881},
+//   {Defunciones: 1093},
+//   {Defunciones: 897},
+//   {Defunciones: 9544} 
+// ]
+// defunciones.sort(( a, b ) => b.Defunciones - a.Defunciones);
+// d3.select('#chart-bar')
+// .selectAll('div')
+// .data(defunciones)
+// .enter()
+// .append('div')
+// .style('width', d => d.Defunciones / 20 + 'px')
+// .style('background-color', 'yellowgreen')
+// .style('margin-bottom', '3px')
+// .style('padding', '1px')
+// .style('color', '#1E2D3A')
+// .style('font-size', '15px')
+// .text(d => d.Defunciones);
+// y si nos pasan datos por un csv?
+
+                  /// Ejemplo de BarChart con CSV ///
+
+  // d3.csv('./CausasDeMortalidadDF2013.csv', (data2) => {
+  //   return {
+  //       Defunciones: +data2.Defunciones
+  //     };
+  //   })
+  //   .then(data2 => {
+  //     debugger;
+  //     data2.sort(( a, b ) => a.Defunciones - b.Defunciones);
+  //     d3.select('#chart-bar')
+  //     .selectAll('div')
+  //     .data(data2)
+  //     .enter()
+  //     .append('div')
+  //     .style('width', d => d.Defunciones / 20 + 'px')
+  //     .style('background-color', 'yellowgreen')
+  //     .style('margin-bottom', '3px')
+  //     .style('padding', '1px')
+  //     .text(d => d.Defunciones);
+  //   });

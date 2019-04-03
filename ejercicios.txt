@@ -1,4 +1,4 @@
-  ///Ejercicio 1 ///
+                            ///Ejercicio 1 ///
     // const p2 = d3.selectAll('#example2 p');
     // p2.style('font-size', d => {
     //   return (Math.random() * 40) + 'px';

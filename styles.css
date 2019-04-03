@@ -14,6 +14,10 @@ body {
 .container-mini {
   width: 40%;
 }
+ul>li {
+  font-size: 18px;
+  color: #1E2D3A;
+}
 .blanch {
   width: 40%;
   display: flex;
@@ -47,6 +51,11 @@ h2 {
   font-size: 40px;
 }
 
+h3 {
+  color: #4AF2A1;
+  font-size: 28px;
+}
+
 .panel-heading {
   color: #B0F566;
   text-shadow: 0.5px 0.2px #616568;
@@ -55,7 +64,7 @@ h2 {
 p {
   color : #293234;
   text-shadow: none;
-  font-size: 15px;
+  font-size: 20px;
 }
 .color-text {
   color: #F78AE0;
